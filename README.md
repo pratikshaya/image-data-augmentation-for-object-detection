@@ -19,3 +19,7 @@ Lets make another python script to convert single text file into multi-text file
 
 ## Convert multi-text file into XML file of Pascal-VOC format (convert_to_VOC.py)
 This is the last step to convert into .XML file in Pascal-VOC format. After executing convert_to_voc.py you will get .XML file for each augmented image. With the help of this augmented image and XML file you can train any object detection model to get the better accuracy.
+
+##References
+1) https://machinelearning.wtf/terms/pca-color-augmentation/
+
