@@ -10,3 +10,8 @@ There are a vast number of augmentation technique in image processing. But I am 
 data_path and xml_path is the input image and xml annotation file of original data. input image is just a .jpg file and annotation file is .XML file in Pascal-VOC format. img_path is the path for augmented data that you will get after running this code. And out_path is .txt file that will contain the bounding box of ground truth object for augmented data. Inside .txt file of out_path you will get six values of image name, xmin, ymin, xmax, ymax and class in separate line.
 After running the augmentation.py, you will get bunch of augmented image and the bounding box coordinates value of each object of augmented image in .txt format as below. Remember, if the image has multiple bounding box then it will save in different line as marked by red line below. The image name is same but the value of bounding box coordinates is different.
 ![a](https://user-images.githubusercontent.com/26374302/60764236-0684a780-a0c1-11e9-8e4b-ad80e93cac4e.png)
+
+## Convert single text file into multi-text file (read_txtfile.py)
+Rather than to convert directly from .txt file to .XML file. First, you need to convert single text file into multi text file. The name of each multi-text file is same as image name but in .txt extension. Inside these .txt file there is only the bounding box coordinates and class name of the particular augmented image. 
+Lets make another python script to convert single text file into multi-text file (read_txtfile.py).  datapath is the path that you previously got after running augmentation.py. savepath is the multi-text file that you will got after running read_txt.py. you will see the following output by running read_txtfile.py
+
