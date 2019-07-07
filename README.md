@@ -15,3 +15,7 @@ After running the augmentation.py, you will get bunch of augmented image and the
 Rather than to convert directly from .txt file to .XML file. First, you need to convert single text file into multi text file. The name of each multi-text file is same as image name but in .txt extension. Inside these .txt file there is only the bounding box coordinates and class name of the particular augmented image. 
 Lets make another python script to convert single text file into multi-text file (read_txtfile.py).  datapath is the path that you previously got after running augmentation.py. savepath is the multi-text file that you will got after running read_txt.py. you will see the following output by running read_txtfile.py
 
+![b](https://user-images.githubusercontent.com/26374302/60764314-3bddc500-a0c2-11e9-96ce-db88587d3f89.png)
+
+## Convert multi-text file into XML file of Pascal-VOC format (convert_to_VOC.py)
+This is the last step to convert into .XML file in Pascal-VOC format. After executing convert_to_voc.py you will get .XML file for each augmented image. With the help of this augmented image and XML file you can train any object detection model to get the better accuracy.
