@@ -22,4 +22,7 @@ This is the last step to convert into .XML file in Pascal-VOC format. After exec
 
 ##References
 1) https://machinelearning.wtf/terms/pca-color-augmentation/
+2) https://github.com/akshaylamba/FasterRCNN_KERAS
+3) https://arxiv.org/abs/1612.03144
+4) https://github.com/DetectionTeamUCAS/FPN_Tensorflow
 
